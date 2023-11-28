@@ -18,4 +18,19 @@ class Production{
   }
 }
 
+$firstFilm = new Production();
+$firstFilm->title = 'Rocky';
+$firstFilm->language = 'italiano';
+$firstFilm->setRating(4);
+
+echo 'Il film si chiama: '.$firstFilm->title.'<br> la lingua é: '.$firstFilm->language.'<br> con valutazione di: '.$firstFilm->getRating().'<br>';
+
+$secondFilm = new Production();
+$secondFilm->title = 'Stranger things';
+$secondFilm->language = 'inglese';
+$secondFilm->setRating(2);
+
+echo 'Il film si chiama: '.$secondFilm->title.'<br> la lingua é: '.$secondFilm->language.'<br> con valutazione di: '.$secondFilm->getRating();
+
+
 ?>
